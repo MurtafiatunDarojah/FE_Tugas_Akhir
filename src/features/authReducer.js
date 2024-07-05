@@ -1,7 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const baseURL = "http://localhost:5000/";
+// const baseURL = "http://localhost:5000/";
+const baseURL = "http://api.farmshias.my.id/";
+
 const token = localStorage.getItem("token");
 
 const initialState = {

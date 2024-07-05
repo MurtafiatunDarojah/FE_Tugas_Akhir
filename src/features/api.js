@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:5000/";
+// const baseURL = "http://localhost:5000/";
+const baseURL = "http://api.farmshias.my.id/";
 
 const fetchData = async (method, url, data = null, params = null) => {
   const token = localStorage.getItem("token");
