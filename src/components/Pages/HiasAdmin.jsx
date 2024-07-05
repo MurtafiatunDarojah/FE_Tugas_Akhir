@@ -61,7 +61,8 @@ const HiasAdmin = () => {
   };
 
   const handleExportToExcel = () => {
-    const worksheet = XLSX.utils.json_to_sheet(data);
+    const filteredData = data.filter((item) => item.is_confirm === true);
+    const worksheet = XLSX.utils.json_to_sheet(filteredData);
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "HiasData");
     XLSX.writeFile(workbook, "HiasData.xlsx");
