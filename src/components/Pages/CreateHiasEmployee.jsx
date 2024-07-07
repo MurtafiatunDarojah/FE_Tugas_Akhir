@@ -120,7 +120,7 @@ const CreateHiasEmployee = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/hias",
+        "http://api.farmshias.my.id/hias",
         formData,
         {
           headers: {
